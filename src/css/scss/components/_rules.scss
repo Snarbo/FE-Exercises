@@ -1,0 +1,12 @@
+.rules {
+  .heading {
+    border: 0;
+    padding: 0;
+  }
+
+  &-box {
+    display: inline-block;
+    border: 1px solid $color-black;
+    padding: $spacing-lg;
+  }
+}

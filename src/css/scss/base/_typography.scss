@@ -1,0 +1,28 @@
+h1 {
+  @include font($font-size-xxl, $font-weight-bold, 1.2);
+}
+
+h2 {
+  @include font($font-size-xl, $font-weight-bold, 1.2);
+}
+
+h3 {
+  @include font($font-size-lg, $font-weight-bold, 1.2);
+}
+
+h4 {
+  @include font($font-size-md, $font-weight-bold, 1.2);
+}
+
+h5 {
+  @include font($font-size-sm, $font-weight-bold, 1.2);
+}
+
+h6 {
+  @include font($font-size-xsm, $font-weight-bold, 1.2);
+}
+
+p,
+li {
+  @include font($font-size-xsm, $font-weight-regular, 30px);
+}

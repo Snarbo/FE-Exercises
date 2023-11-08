@@ -1,0 +1,33 @@
+.sidebar {
+  margin: 0 0 0 $spacing-xxl;
+  padding: $spacing-xxl $spacing-xl;
+  width: 300px;
+  background-color: $color-primary;
+
+  .sticky {
+    position: sticky;
+    top: $spacing-xl;
+  }
+
+  .heading {
+    border-color: $color-white;
+    color: $color-white;
+  }
+
+  li {
+    padding: 0;
+
+    a {
+      color: $color-white;
+      transition: $trans-fast;
+
+      &:hover {
+        color: darken($color-white, 10%);
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

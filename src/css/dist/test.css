@@ -1,0 +1,45 @@
+.exercise--1 .col:nth-child(2) {
+  background: red;
+}
+
+.exercise--2 .col:nth-child(2) p {
+  background: red;
+}
+
+.exercise--3 .col:nth-child(2) p,
+.exercise--3 .col:nth-child(4) p {
+  background: red;
+}
+
+/* .exercise--4 .col:nth-child(3) {
+    background: red;
+} */
+
+.exercise--4 .col:last-child {
+  background: red;
+}
+
+.exercise--5 .col:not(:first-of-type),
+.exercise--5 .col:not(:last-of-type) {
+  background: red;
+}
+
+.exercise--6 li:nth-child(odd) {
+  background: blue;
+}
+
+.exercise--6 li:nth-child(even) {
+  background: grey;
+}
+
+/* .exercise--7 li:nth-child(3n) {
+  background: red;
+} */
+
+.exercise--7 li:nth-of-type(3n) {
+  background: red;
+}
+
+.exercise--8 .col:nth-child(2) p:nth-child(3) {
+  background: red;
+}

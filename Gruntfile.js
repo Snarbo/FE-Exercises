@@ -8,6 +8,24 @@ module.exports = function (grunt) {
         files: ['src/css/scss/**/*.scss'],
         tasks: ['sass', 'cssmin'],
       },
+      js: {
+        files: ['src/js/**/*.js'],
+        tasks: ['concat', 'uglify'],
+      },
+    },
+    concat: {
+      //concat all js files
+      js: {
+        src: ['src/js/components/*.js'],
+        dest: 'src/js/dist/concat.js',
+      },
+    },
+    uglify: {
+      //minify js file
+      build: {
+        src: ['src/js/dist/concat.js'],
+        dest: 'src/js/dist/concat.min.js',
+      },
     },
     sass: {
       //concat all scss files
@@ -38,9 +56,12 @@ module.exports = function (grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Register tasks
+  grunt.registerTask('watch-js', 'watch:js');
   grunt.registerTask('watch-sass', 'watch:sass');
   grunt.registerTask('default', 'watch');
 };

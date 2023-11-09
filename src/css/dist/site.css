@@ -163,3 +163,31 @@ li {
         color: #e6e5e5; }
     .sidebar li::before {
       display: none; }
+
+.nth-child .exercise--1 .col:nth-child(2) {
+  background: red; }
+
+.nth-child .exercise--2 .col:nth-child(2) p {
+  background: red; }
+
+.nth-child .exercise--3 .col:nth-child(2) p,
+.nth-child .exercise--3 .col:nth-child(4) p {
+  background: red; }
+
+.nth-child .exercise--4 .col:last-child {
+  background: red; }
+
+.nth-child .exercise--5 .col:not(:first-child):not(:last-child) {
+  background: red; }
+
+.nth-child .exercise--6 li:nth-child(odd) {
+  background: blue; }
+
+.nth-child .exercise--6 li:nth-child(even) {
+  background: grey; }
+
+.nth-child .exercise--7 li:nth-of-type(3n) {
+  background: red; }
+
+.nth-child .exercise--8 .col:nth-child(2) p:nth-child(3) {
+  background: red; }

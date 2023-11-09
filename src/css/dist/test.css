@@ -19,8 +19,12 @@
   background: red;
 }
 
-.exercise--5 .col:not(:first-of-type),
+/* .exercise--5 .col:not(:first-of-type),
 .exercise--5 .col:not(:last-of-type) {
+  background: red;
+} */
+
+.exercise--5 .col:not(:first-child):not(:last-child) {
   background: red;
 }
 

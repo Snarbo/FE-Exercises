@@ -92,6 +92,16 @@ section {
   padding: 0 0 30px;
   color: #144757; }
 
+form input,
+form select,
+form textarea {
+  border: 1px solid #b7c2d7;
+  padding: 8px 15px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; }
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -148,21 +158,41 @@ li {
   padding: 40px 30px;
   width: 300px;
   background-color: #144757; }
+  .sidebar * {
+    color: #fff; }
+  .sidebar ul {
+    border-left: 1px solid #fff;
+    margin: 20px 0 0;
+    padding: 0 0 0 20px; }
+  .sidebar li {
+    padding: 0; }
+    .sidebar li a {
+      transition: all 0.2s; }
+      .sidebar li a:hover {
+        color: #e6e5e5; }
+    .sidebar li::before {
+      display: none; }
   .sidebar .sticky {
     position: sticky;
     top: 30px; }
   .sidebar .heading {
     border-color: #fff;
     color: #fff; }
-  .sidebar li {
-    padding: 0; }
-    .sidebar li a {
-      color: #fff;
-      transition: all 0.2s; }
-      .sidebar li a:hover {
-        color: #e6e5e5; }
-    .sidebar li::before {
-      display: none; }
+  .sidebar .cat {
+    margin: 30px 0 0; }
+    .sidebar .cat:first-child {
+      margin: 0; }
+
+button,
+.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #144757;
+  color: #fff;
+  transition: all 0.2s; }
+  button:hover,
+  .button:hover {
+    background-color: #0f3642; }
 
 .nth-child .exercise--1 .col:nth-child(2) {
   background: red; }
@@ -191,3 +221,20 @@ li {
 
 .nth-child .exercise--8 .col:nth-child(2) p:nth-child(3) {
   background: red; }
+
+.jquery button,
+.jquery .button {
+  margin: 30px 0 0; }
+
+.jquery .shape {
+  border: 1px solid #b7c2d7;
+  width: 60px;
+  height: 60px; }
+  .jquery .shape--circle {
+    border-radius: 50%; }
+
+.jquery .alert {
+  display: none;
+  padding: 20px;
+  background-color: #b7c2d7;
+  color: #000; }

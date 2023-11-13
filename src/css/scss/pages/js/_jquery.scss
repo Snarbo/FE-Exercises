@@ -1,0 +1,23 @@
+.jquery {
+  button,
+  .button {
+    margin: $spacing-xl 0 0;
+  }
+
+  .shape {
+    border: 1px solid $color-tertiary;
+    width: 60px;
+    height: 60px;
+
+    &--circle {
+      border-radius: 50%;
+    }
+  }
+
+  .alert {
+    display: none;
+    padding: $spacing-lg;
+    background-color: $color-tertiary;
+    color: $color-black;
+  }
+}

@@ -4,6 +4,32 @@
   width: 300px;
   background-color: $color-primary;
 
+  * {
+    color: $color-white;
+  }
+
+  ul {
+    border-left: 1px solid $color-white;
+    margin: $spacing-lg 0 0;
+    padding: 0 0 0 $spacing-lg;
+  }
+
+  li {
+    padding: 0;
+
+    a {
+      transition: $trans-fast;
+
+      &:hover {
+        color: darken($color-white, 10%);
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
   .sticky {
     position: sticky;
     top: $spacing-xl;
@@ -14,20 +40,11 @@
     color: $color-white;
   }
 
-  li {
-    padding: 0;
+  .cat {
+    margin: $spacing-xl 0 0;
 
-    a {
-      color: $color-white;
-      transition: $trans-fast;
-
-      &:hover {
-        color: darken($color-white, 10%);
-      }
-    }
-
-    &::before {
-      display: none;
+    &:first-child {
+      margin: 0;
     }
   }
 }

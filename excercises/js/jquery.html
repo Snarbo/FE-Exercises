@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="/src/js/dist/concat.min.js" defer></script>
+    <link rel="stylesheet" href="/src/css/dist/site.min.css" />
+  </head>
+  <body class="jquery">
+    <div class="page-title">
+      <div class="container">
+        <h1>jQuery</h1>
+      </div>
+    </div>
+    <section class="rules">
+      <div class="container">
+        <h4 class="heading">Rule(s)</h4>
+        <div class="rules-box">
+          <p>No rules</p>
+        </div>
+      </div>
+    </section>
+    <div class="row container">
+      <main class="main-content col">
+        <section class="exercise exercise--1">
+          <h4 class="heading">Excercise 1</h4>
+          <p>Select the elements below and change thir background color. The square should be blue and the circle should be green.</p>
+          <div class="row">
+            <div class="col col-1">
+              <div class="shape shape--square"></div>
+            </div>
+            <div class="col col-2">
+              <div class="shape shape--circle"></div>
+            </div>
+          </div>
+        </section>
+        <section class="exercise exercise--2">
+          <h4 class="heading">Excercise 2</h4>
+          <p>Write in this input box below. I want the text inputed to display on the screen when you click the button.</p>
+          <div class="row">
+            <div class="col col-1">
+              <form>
+                <div class="form-field">
+                  <input type="text" />
+                </div>
+              </form>
+              <button class="button">Submit</button>
+            </div>
+            <div class="col col-2">
+              <p></p>
+            </div>
+          </div>
+        </section>
+        <section class="exercise exercise--3">
+          <h4 class="heading">Excercise 3</h4>
+          <p>Add a class of "block" to the first element. Remove the class of "block" to the second element. Toggle a class of "toggled" to the third element when you click the toggle button.</p>
+          <div class="row">
+            <div class="col col-1">
+              <div class="shape shape-square"></div>
+            </div>
+            <div class="col col-2">
+              <div class="shape shape-square block"></div>
+            </div>
+            <div class="col col-3">
+              <div class="shape shape-square"></div>
+              <button class="button toggle">toggle</button>
+            </div>
+          </div>
+        </section>
+        <section class="exercise exercise--4">
+          <h4 class="heading">Excercise 4</h4>
+          <p>Remove the first element from the DOM. Hide the second element. Add the third element to the DOM.</p>
+          <div class="row">
+            <div class="col col-1">
+              <div class="shape shape-square"></div>
+            </div>
+            <div class="col col-2">
+              <div class="shape shape-square"></div>
+            </div>
+            <div class="col col-3"></div>
+          </div>
+        </section>
+        <section class="exercise exercise--5">
+          <h4 class="heading">Excercise 5</h4>
+          <p>Show the alert when clicked on the button and hide the alert after 3 seconds.</p>
+          <div class="row">
+            <div class="col col-1">
+              <div class="alert">This is an alert!</div>
+              <button class="button">Show alert</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <aside class="sidebar">
+        <div class="sticky">
+          <h4 class="heading">Excercises</h4>
+          <nav>
+            <div class="cat cat-css">
+              <h6>CSS</h6>
+              <ul>
+                <li><a href="/excercises/css/nth-child.html">nth-child</a></li>
+              </ul>
+            </div>
+            <div class="cat cat-js">
+              <h6>JS</h6>
+              <ul>
+                <li><a href="/excercises/js/jquery.html">jQuery</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+button,
+.button {
+  display: inline-block;
+  padding: $spacing-sm;
+  background-color: $color-primary;
+  color: $color-white;
+  transition: $trans-fast;
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+}

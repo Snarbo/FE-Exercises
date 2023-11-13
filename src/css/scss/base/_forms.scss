@@ -1,0 +1,10 @@
+form {
+  input,
+  select,
+  textarea {
+    border: 1px solid $color-tertiary;
+    padding: $spacing-xsm $spacing-md;
+    width: 100%;
+    @include font($font-size-xsm, $font-weight-regular, 30px);
+  }
+}

@@ -4,13 +4,18 @@
 
 //base
 @import 'base/_base';
+@import 'base/_forms';
 @import 'base/_typography';
 
 //components
 @import 'components/_page-title';
 @import 'components/_rules';
 @import 'components/_sidebar';
+@import 'components/_button';
 
 //pages
 //css
 @import 'pages/css/_nthchild';
+
+//js
+@import 'pages/js/_jquery';

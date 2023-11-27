@@ -194,6 +194,25 @@ button,
   .button:hover {
     background-color: #0f3642; }
 
+.accordion {
+  margin: 8px 0 0; }
+  .accordions {
+    margin: 20px 0 0; }
+  .accordion-head {
+    padding: 15px 20px;
+    background-color: #144757;
+    color: #fff;
+    cursor: pointer; }
+  .accordion-body {
+    display: none;
+    padding: 20px;
+    background-color: #e4eef2; }
+  .accordion:first-child {
+    margin: 0; }
+
+.carousel img {
+  object-fit: cover; }
+
 .nth-child .exercise--1 .col:nth-child(2) {
   background: red; }
 
